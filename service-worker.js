@@ -1,4 +1,4 @@
-const CACHE = "spendwise-shell-v2";
+const CACHE = "spendwise-shell-v3";
 const FILES = [
   "./",
   "./index.html",
@@ -9,7 +9,7 @@ const FILES = [
   "./receipts.js",
   "./reports.js",
   "./charts.js",
-  "./app.js",
+  "./app.js?v=3",
   "./manifest.webmanifest",
   "./icons/icon-192.svg",
   "./icons/icon-512.svg",
