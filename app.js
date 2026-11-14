@@ -95,7 +95,28 @@ const I18N = {
     cancel: "Annuler",
   },
 };
-const EN = { todayTotal: "Today", thisWeek: "This week", thisMonth: "This month", transactions: "Transactions", dailyAverage: "Daily average", highestDay: "Highest day", budgetRemaining: "Budget remaining", remaining: "remaining", perDay: "per day", inThisMonth: "in this month", highestExpense: "Highest expense", lowestExpense: "Lowest expense", spent: "Spent", noBudget: "No budget set yet.", noCategoryBudgets: "No category budgets yet.", month: "Month", week: "Reporting week", exportWeekly: "Weekly CSV", exportMonthly: "Monthly CSV", dailyCsv: "Daily CSV" };
+const EN = {
+  dashboard: "Dashboard", expenses: "Expenses", reports: "Reports", budgets: "Budgets", settings: "Settings",
+  private: "Private by design", stored: "Your data stays on this device", addExpense: "Add expense",
+  overview: "Your money, at a glance", overviewSub: "A clear view of your spending, all in one place.", reportingMonth: "Reporting month",
+  monthlyTrend: "Monthly spending", monthlyTrendSub: "Daily totals for the selected month", categories: "Spending by category", categoriesSub: "Where your money goes",
+  weeklyCompare: "Weekly comparison", weeklyCompareSub: "Fixed reporting periods", monthlyCompare: "Monthly comparison", monthlyCompareSub: "Monthly totals over the last six months",
+  dailyAverages: "Daily average trend", dailyAveragesSub: "Monthly spending divided by all days", recent: "Recent transactions", recentSub: "Your latest activity", viewAll: "View all →",
+  historyTitle: "Transaction history", historySub: "Search, filter and manage every expense.", search: "Search", from: "From", to: "To", category: "Category", payment: "Payment", clear: "Clear",
+  noExpenses: "No expenses found", noExpensesSub: "Try adjusting your filters or add an expense.", reportsTitle: "Reports", reportsSub: "Explore spending by day, week and month.", downloadReport: "Download report",
+  fixedWeeks: "Monthly fixed weeks", calendarWeeks: "Calendar weeks", dailyReport: "Daily report", dailyReportSub: "Select a date to inspect activity", paymentMix: "Payment methods", paymentMixSub: "Selected month breakdown",
+  budgetTitle: "Budgets", budgetSub: "Set flexible limits and keep an eye on your pace.", monthlyBudget: "Monthly budget", monthlyBudgetSub: "Your overall spending target", weeklyBudget: "Weekly budget", weeklyBudgetSub: "Target for each reporting period",
+  amount: "Amount", saveBudget: "Save budget", categoryBudgets: "Category budgets", categoryBudgetsSub: "Optional monthly limits by category", addBudget: "Add budget",
+  settingsTitle: "Settings & data", settingsSub: "Manage your preferences and keep a safe copy of your records.", preferences: "Preferences", preferencesSub: "Personalize Spendwise",
+  currency: "Currency", currencySub: "Used for all totals and reports", language: "Language", languageSub: "Interface language", appearance: "Appearance", appearanceSub: "Choose a comfortable theme",
+  backupTitle: "Backup & export", backupSub: "Your records stay on this device. Make regular backups.", exportCsv: "Export expenses as CSV", fullBackup: "Download full backup (JSON)", exportReceipts: "Export receipts", restoreBackup: "Restore backup",
+  restoreNote: "Restored records are added alongside existing data. Duplicate IDs are replaced after confirmation.", categoriesManage: "Categories", categoriesManageSub: "Create and organize your expense categories", addCategory: "Add category",
+  privacyTitle: "Your data belongs to you", privacyText: "Everything is stored locally in this browser. Clearing browser storage or uninstalling the app can remove your records. Export a backup regularly.", storageUsed: "Storage used",
+  date: "Date", merchant: "Merchant / store", description: "Description", receipts: "Receipt photos", receiptsOptional: "Optional · images are compressed and stored on this device", addPhoto: "Add photos", scanReceipt: "Read receipt (OCR)", cancel: "Cancel",
+  todayTotal: "Today", thisWeek: "This week", thisMonth: "This month", transactions: "Transactions", dailyAverage: "Daily average", highestDay: "Highest day", budgetRemaining: "Budget remaining",
+  remaining: "remaining", perDay: "per day", inThisMonth: "in this month", highestExpense: "Highest expense", lowestExpense: "Lowest expense", spent: "Spent", noBudget: "No budget set yet.", noCategoryBudgets: "No category budgets yet.",
+  month: "Month", week: "Reporting week", exportWeekly: "Weekly CSV", exportMonthly: "Monthly CSV", dailyCsv: "Daily CSV"
+};
 function t(key) {
   return I18N[App.settings.language]?.[key] || EN[key] || key;
 }
